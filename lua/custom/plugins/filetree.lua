@@ -9,10 +9,13 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
-  config = function ()
-    require('neo-tree').setup {}
+  config = function()
+    require('neo-tree').setup {
+      sources = { "filesystem", "buffers", "git_status", "document_symbols" },
+    }
 
     vim.keymap.set('n', 'E', ':Neotree toggle current reveal_force_cwd<cr>')
     vim.keymap.set('n', '|', ':Neotree reveal<cr>')
+    vim.keymap.set('n', 'S', ':Neotree toggle show document_symbols right<cr>')
   end,
 }
