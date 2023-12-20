@@ -222,7 +222,7 @@ vim.o.dir = '/tmp'
 vim.o.inccommand = 'nosplit'
 
 -- do not keep a backup file
-vim.o.nobackup = true
+-- vim.o.nobackup = true
 
 vim.o.copyindent = true
 
