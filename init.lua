@@ -368,7 +368,7 @@ vim.keymap.set('n', '<leader><Tab>', require('telescope.builtin').buffers, { des
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'cpp', 'lua', 'python', 'vimdoc', 'vim', 'bash' },
+    ensure_installed = { 'c', 'cpp', 'lua', 'python', 'rust', 'vimdoc', 'vim', 'bash' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = true,
