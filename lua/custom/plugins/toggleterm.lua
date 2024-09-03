@@ -3,7 +3,8 @@ return {
   version = "*",
   config = function ()
     require("toggleterm").setup {
-      open_mapping = '<C-j>'
+      open_mapping = '<C-j>',
+      shell = 'zsh'
     }
 
     function _G.set_terminal_keymaps()
